@@ -18,7 +18,7 @@ try:
     all_tab.click()
 
     # Go to Today’s Deals
-    todays_deals = WebDriverWait(driver, 20).until(
+    todays_deals = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH, "/html/body/div[3]/div[2]/div/ul[1]/li[17]/a"))
     )
     todays_deals.click()
@@ -32,7 +32,7 @@ try:
     first_product.click()
 
     # Click on the 2nd item in this product
-    second_item = WebDriverWait(driver, 20).until(
+    second_item = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div[1]/div/div/div[9]/div[1]/ul/li[2]/div/div[3]/a/img"))
     )
     #second_item = driver.find_element(By.XPATH, "/html/body/div[1]/div[1]/div/div/div[9]/div[1]/ul/li[2]/div/div[3]/a/img")

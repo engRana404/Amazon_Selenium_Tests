@@ -21,7 +21,7 @@ try:
     sign_in_button.click()
 
     # Enter an unregistered email
-    email_field = WebDriverWait(driver, 20).until(
+    email_field = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.ID, "ap_email"))
     )
     email_field.send_keys("unregistered_email@example.com")  # Use an unregistered email
