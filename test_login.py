@@ -12,7 +12,7 @@ driver = webdriver.Chrome()
 
 try:
     # Navigate to Amazon
-    driver.get('https://www.amazon.com/')
+    driver.get('https://www.amazon.eg/-/en/')
     
     # Click on the sign-in button
     sign_in_button = WebDriverWait(driver, 10).until(
@@ -41,7 +41,8 @@ try:
         print("Test Passed: User cannot log in with a valid but unregistered email.")
     else:
         print("Test Failed: The error message is not as expected.")
-    driver.save_screenshot("test_login.png")
+        driver.save_screenshot("test_login.png")
+    
 
 finally:
     # Close the browser
