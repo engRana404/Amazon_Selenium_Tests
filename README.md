@@ -1,4 +1,4 @@
-# MDI_Automation_Task
+# Amazon_Selenium_Tests
 
 ## Overview
 
